@@ -1,0 +1,265 @@
+.bodyContainer {
+    display: flex;
+
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    font-family: 'Share Tech Mono', monospace;
+    background-size: 100%;
+    background-color: black;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainCharacterView {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left {}
+
+.right {}
+
+.nameBox {
+    border: 1px solid black;
+    width: 25vw;
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    box-shadow: 0px 0px 20px 10px white;
+
+}
+
+.playerImage {
+    border: 1px solidblack;
+    width: 30vw;
+    height: 40vh;
+    background-image: url("/images/space_hero.gif");
+    transform: rotate(90deg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 20px 10px white;
+
+
+
+}
+
+.playerStats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solidblack;
+    width: 15vw;
+    height: 15vh;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 20px 10px white;
+    border-radius: 2%;
+
+
+}
+
+.enemyImage {
+    border: 1px solidblack;
+    width: 30vw;
+    height: 35vh;
+    background-image: url("/images/enemy.gif");
+    transform: rotate(90deg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 20px 10px white;
+
+
+
+}
+
+.enemyStats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solidblack;
+    width: 15vw;
+    height: 15vh;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 20px 10px white;
+
+}
+
+/*AKBAR CHANGES TO CSS*/
+/*====================*/
+
+/*START BUTTON ON MAIN PAGE*/
+/*=========================*/
+.s-button {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#start-button {
+    margin: 2rem;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 1.5em;
+    background-color: black;
+    box-shadow: 0px 0px 20px 10px white;
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+}
+
+/*MODAL ADD TO THE PAGE*/
+/*=====================*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow: auto;
+    display: none;
+    ;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 60%;
+    max-height: 75%;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 20px white;
+    overflow: auto;
+}
+
+.modal-content h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.modal-content p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 120%;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modal-content div {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 120%;
+}
+
+.modal-close {
+    margin: 2rem;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: black;
+    box-shadow: 0px 0px 20px 10px white;
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+}
+
+#yes {
+    margin: 2rem;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: black;
+    box-shadow: 0px 0px 20px 10px white;
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: red;
+}
+
+#yes:hover,
+#yes:focus {
+    color: green;
+}
+
+.modalShipCap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow: auto;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.modalShipCap-content {
+    background-image: url(./images/modal2back.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    max-height: 75%;
+    margin: 2rem;
+    margin-top: 6rem;
+    padding: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 6px 30px white;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#attack {
+    cursor: pointer;
+    font-size: 2em;
+    background-color: red;
+    box-shadow: 0px 0px 20px 10px white;
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+}
+
+#close {
+    cursor: pointer;
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+}
+
+#close:hover,
+#close:focus {
+    color: red;
+}

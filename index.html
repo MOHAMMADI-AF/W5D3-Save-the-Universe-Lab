@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--<script type="text/javascript" src="./script.js" defer></script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="s-button">
+        <button id="start-button">START GAME</button>
+    </div>
+
+    <div class="bodyContainer">
+
+        <div class="mainCharacterView left">
+            <div class="nameBox">USS Schwarzenegger</div>
+            <div class="playerImage"></div>
+            <div class="playerStats">
+
+                Hull : 20 <br>
+                FirePower : 5 <br>
+                Accuracy : .7 <br>
+            </div>
+        </div>
+
+        <div class="mainCharacterView right">
+
+            <div class="nameBox">Enemy</div>
+            <div class="enemyImage"></div>
+            <div class="enemyStats">
+                Hull : 6 <br>
+                FirePower : 3 <br>
+                Accuracy : .6 <br>
+
+
+            </div>
+
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <!--<span class="modal-close">&times;</span>-->
+                <h1>ARE YOU READY FOR THIS MISSION</h1>
+                <div class="top-bar"><img src="../images/modtopbar.jpg" alt="modalTopBar"></div>
+                <p>Earth has been attacked by a horde of aliens! Would you like to be the captain of the USS HelloWorld,
+                    on a mission to destroy every last alien ship.</p>
+                <div class="modal-button">
+                    <button id="yes">YES!! I AM READY</button>
+                    <button class="modal-close">I AM NOT READY</button>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+
+
+        </div>
+
+        <div class="modalShipCap">
+            <div class="modalShipCap-content">
+                <button id="close">CLICK TO CLOSE</button>
+                <H1 id="status">
+
+                </H1>
+                <button id="attack">CLICK TO START</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
